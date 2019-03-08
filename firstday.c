@@ -13,7 +13,7 @@ return x;
 }
 void output(int m,int n)
 {
-printf("%d+6 is %d",m,n);
+printf("%d+1 is %d",m,n);
 }
 int main(void)
 {
