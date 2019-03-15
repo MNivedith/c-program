@@ -29,7 +29,7 @@ void compute(int n,struct fraction f[],struct fraction *f1)
  }
  for(i=1;i<=n;i++)
  {
-  numerator=numerator+(f[i].num*denominator/f[i].den);
+  numerator=numerator+(f[i].num*denominator/f[i].num);
  }
  f1->num=numerator;
  f1->den=denominator;
