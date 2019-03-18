@@ -10,7 +10,7 @@ int inputrange()
  scanf("%d",&i);
  return i;
 }
-struct fraction input(int n,struct fraction f[])
+void input(int n,struct fraction f[])
 {
  int i;
  printf("Enter the fractions\n\n");
@@ -19,8 +19,8 @@ struct fraction input(int n,struct fraction f[])
   printf("Enter the numerator and denominator of fraction %d\n",i);
   scanf("%d%d",&f[i].num,&f[i].den);
  }
-};
-struct fraction compute(int n,struct fraction f[],struct fraction *f1)
+}
+void compute(int n,struct fraction f[],struct fraction *f1)
 {
  int numerator=0,denominator=1,i;
  for(i=1;i<=n;i++)
@@ -33,11 +33,11 @@ struct fraction compute(int n,struct fraction f[],struct fraction *f1)
  }
  f1->num=numerator;
  f1->den=denominator;
-};
-struct fraction output(struct fraction f1)
+}
+void output(struct fraction f1)
 {
  printf("The sum of all the fraction is %d/%d",f1.num,f1.den);
-};
+}
 
 int main()
 {
