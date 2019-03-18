@@ -14,7 +14,7 @@ void input(int n,struct fraction f[])
 {
  int i;
  printf("Enter the fractions\n\n");
- for(i=1;i<n;i++)
+ for(i=0;i<n;i++)
  {
   printf("Enter the numerator and denominator of fraction %d\n",i);
   scanf("%d%d",&f[i].num,&f[i].den);
@@ -23,11 +23,11 @@ void input(int n,struct fraction f[])
 void compute(int n,struct fraction f[],struct fraction *f1)
 {
  int numerator=0,denominator=1,i;
- for(i=1;i<n;i++)
+ for(i=0;i<n;i++)
  {
   denominator=denominator*f[i].den;
  }
- for(i=1;i<n;i++)
+ for(i=0;i<n;i++)
  {
   numerator=numerator+(f[i].num*denominator/f[i].num);
  }
