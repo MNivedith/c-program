@@ -6,15 +6,11 @@ struct fraction
  void input(struct fraction *fr1,struct fraction *fr2)
 {
  printf("enter the first number:");
- printf("enter the num:");
- scanf("%d",&fr1->num);
- printf("enter the dem:");
- scanf("%d",&fr1->dem);
+ printf("enter the num and dem:");
+ scanf("%d%d",&fr1->num,&fr2->dem);
  printf("enter the second number:");
- printf("enter the num:");
- scanf("%d",&fr2->num);
- printf("enter the dem:");
- scanf("%d",&fr2->dem);
+ printf("enter the num and dem:");
+ scanf("%d%d",&fr2->num,&fr1->dem);
 }
 struct fraction compute(struct fraction fr1,struct fraction fr2,int *s1,int *s2)
 {
