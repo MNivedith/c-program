@@ -25,12 +25,11 @@ void output(int s1,int s2)
 {
  printf("s1 and s2 %d+%d",s1,s2);
 }
-int main()
+void main()
 {
  int  s1,s2;
  struct fraction fr1,fr2;
  input(&fr1,&fr2);
  compute(fr1,fr2,&s1,&s2);
  output(s1,s2);
- return 0;
 }
