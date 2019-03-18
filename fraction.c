@@ -12,10 +12,10 @@ struct fraction
  printf("enter the num and dem:");
  scanf("%d%d",&fr2->num,&fr1->dem);
 }
-struct fraction compute(struct fraction fr1,struct fraction fr2,int *s1,int *s2)
+struct fraction compute(struct fraction fr1,struct fraction fr2,int s1,int s2)
 {
- *s1=(fr1.num*fr2.dem+fr2.num*fr1.dem);
- *s2=(fr1.dem*fr2.dem);
+ s1=(fr1.num*fr2.dem+fr2.num*fr1.dem);
+ s2=(fr1.dem*fr2.dem);
 };
 void output(int s1,int s2)
 {
