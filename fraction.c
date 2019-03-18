@@ -23,8 +23,7 @@ struct fraction compute(struct fraction fr1,struct fraction fr2,int *s1,int *s2)
 };
 void output(int s1,int s2)
 {
- printf("s1 %d",s1);
- printf("s2 %d",s2);
+ printf("s1 and s2 %d+%d",s1,s2);
 }
 int main()
 {
