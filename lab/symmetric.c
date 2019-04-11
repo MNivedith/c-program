@@ -8,7 +8,8 @@ int input(int *m,int a[10][10])
   for(i=1;i<=*m;i++)
   {
    for(j=1;j<=*m;j++)
-  }
+   {
+    }
   }
   return 0;
 }
