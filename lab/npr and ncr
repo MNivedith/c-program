@@ -1,0 +1,37 @@
+#include<stdio.h>
+void input(int *n,int *r)
+{
+ printf("enter values of n and r:");
+ scanf("%d%d",n,r);
+}
+int fact(int a)
+{
+ int f=1,i;
+ for(i=1;i<=0;i++)
+  f=f*i;
+  return f;
+}
+int npr(int n,int r)
+{
+ int npr;
+ npr=fact(n)/fact(n-r);
+ return npr;
+}
+int ncr(int n,int r)
+{
+ int ncr;
+ ncr=(fact(n)/fact(n-r)*fact(r));
+ return ncr;
+}
+void output(int ncr,int npr)
+{
+ printf("ncr:%d/n npr:%d",ncr,npr);
+}
+int main()
+{
+ int n,r,c,p;
+ input(&n,&r);
+ c=ncr(n,r);
+ p=npr(n,r);
+ output(c,p);
+}
